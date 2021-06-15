@@ -1,6 +1,5 @@
 package com.example.alpas
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.View
@@ -13,7 +12,7 @@ import kotlinx.android.synthetic.main.activity_address_list.*
 import kotlinx.android.synthetic.main.activity_register.*
 
 class AddAddressActivity : BaseActivity() {
-
+    //Add Address
     private var mAddressDetails: Address? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
