@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alpas">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Alpas"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Alpas2">
+        <activity android:name=".TermsAndConditionsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".SearchUserChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SaveThreadsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ThreadDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MyThreadsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AddForumActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas" />
+        <activity
+            android:name=".ChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas" />
+        <activity
+            android:name=".MessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SavedConsultationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ConsultationDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MyConsultationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AddConsultationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MySoldProductsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MyOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MyProductsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".sampleActivity" />
+        <activity
+            android:name=".SoldProductDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".OrderDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CheckoutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AddAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AddressListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CartListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ProductDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AddProductActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".BaseActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Alpas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".FirebaseService"
+            android:permission="com.google.android.c3dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c3dm.intent.RECIEVE" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

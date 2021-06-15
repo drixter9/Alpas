@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorOffWhite"
+    android:layout_marginTop="@dimen/item_address_margin_top"
+    android:paddingStart="@dimen/item_address_padding_startEnd"
+    android:paddingEnd="@dimen/item_address_padding_startEnd"
+    android:paddingTop="@dimen/item_address_padding_topBottom"
+    android:paddingBottom="@dimen/item_address_padding_topBottom"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+       >
+
+        <com.example.alpas.utilsAlpas.AlpasTextViewBold
+            android:id="@+id/tv_address_full_name_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/item_address_name_textSize"
+            tools:text="John"/>
+
+        <com.example.alpas.utilsAlpas.AlpasTextViewBold
+            android:id="@+id/tv_address_type_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_primary_color_border_background"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/item_address_type_padding_startEnd"
+            android:paddingEnd="@dimen/item_address_type_padding_startEnd"
+            android:paddingTop="@dimen/item_address_type_padding_topBottom"
+            android:paddingBottom="@dimen/item_address_type_padding_topBottom"
+            android:textSize="@dimen/address_details_textSize"
+            android:textStyle="bold"
+            tools:text="John"/>
+
+    </LinearLayout>
+    <com.example.alpas.utilsAlpas.AlpasTextViewBold
+        android:id="@+id/tv_address_details_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/address_details_marginTop"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="@dimen/address_details_textSize"
+        tools:text="xyzzzzz"/>
+
+    <com.example.alpas.utilsAlpas.AlpasTextViewBold
+        android:id="@+id/tv_address_phone_number_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/address_details_marginTop"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="@dimen/address_details_textSize"
+        tools:text="090909090"/>
+</LinearLayout>

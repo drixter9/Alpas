@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ThreadDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_thread_details_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/action_bar_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title_thread_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="@string/title_thread_details"
+            android:textColor="@color/background_white"
+            android:textSize="@dimen/toolbar_title_text_size"
+            android:textStyle="bold"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+
+        android:id="@+id/sv_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_thread_details_activity"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/rl_chat_reply"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_thread_user_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_user_image_thread_details"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/user_placeholder"
+                    app:civ_border_color="@color/input_text"
+                    app:civ_border_width="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.example.alpas.utilsAlpas.AlpasTextViewBold
+                            android:id="@+id/tv_thread_title_details"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/item_address_name_textSize"
+                            tools:text="How to run this progra? in htmslsdasdasd" />
+
+                        <com.example.alpas.utilsAlpas.AlpasTextViewBold
+                            android:id="@+id/tv_thread_type_engineering_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/item_primary_color_border_background"
+                            android:paddingStart="@dimen/item_address_type_padding_startEnd"
+                            android:paddingTop="@dimen/item_address_type_padding_topBottom"
+                            android:paddingEnd="@dimen/item_address_type_padding_startEnd"
+                            android:paddingBottom="@dimen/item_address_type_padding_topBottom"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/address_details_textSize"
+                            android:textStyle="bold"
+                            tools:text="Computer" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.example.alpas.utilsAlpas.AlpasTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:text="@string/threads_td"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <com.example.alpas.utilsAlpas.AlpasTextView
+                            android:id="@+id/tv_threads_topic_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            tools:text="Programming" />
+                    </LinearLayout>
+
+                    <com.example.alpas.utilsAlpas.AlpasTextView
+                        android:id="@+id/tv_thread_date_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textSize="14sp"
+                        tools:text="04/30/2000" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.example.alpas.utilsAlpas.AlpasTextView
+                android:id="@+id/tv_threads_description_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:text="Programmings" />
+
+            <ImageView
+                android:id="@+id/iv_thread_details_image"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorImageViewBackground"
+                android:contentDescription="@string/content_description"
+                android:maxHeight="300dp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/ll_forum_item_like_comment_save"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/tb_like_thread_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:checked="false"
+                    android:drawableStart="@drawable/ic_baseline_like"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@drawable/like_color_change"
+                    android:textColor="@drawable/like_color_change"
+                    android:textOff="@string/like"
+                    android:textAllCaps="false"
+                    android:textOn="@string/like"
+                    android:textSize="14sp" />
+
+                <com.example.alpas.utilsAlpas.AlpasButton
+                    android:id="@+id/btn_comments_forum_list"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/ic_baseline_forum"
+                    android:drawableTint="@color/colorDarkGrey"
+                    android:text="@string/comment"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorDarkGrey"
+
+                    />
+
+                <com.example.alpas.utilsAlpas.AlpasButton
+                    android:id="@+id/btn_save_forum_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/ic_baseline_save_forum"
+                    android:drawablePadding="15dp"
+                    android:drawableTint="@color/colorDarkGrey"
+                    android:text="@string/save"
+                    android:textAllCaps="false"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorDarkGrey" />
+
+                <com.example.alpas.utilsAlpas.AlpasButton
+                    android:id="@+id/btn_go_to_save_forum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/ic_baseline_save_forum"
+                    android:drawablePadding="15dp"
+                    android:drawableTint="@color/input_text"
+                    android:text="@string/go_to_saved"
+                    android:textAllCaps="false"
+                    android:textAlignment="textStart"
+                    android:visibility="gone"
+                    android:textColor="@color/input_text" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_comment_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout
+        android:id="@+id/rl_chat_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/item_gray_border_backgorund"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/et_comment_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_message_background"
+                android:hint="@string/type_message"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                 />
+
+            <ImageButton
+                android:id="@+id/btn_send_comment"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_send_background"
+                android:src="@drawable/ic_baseline_forum"
+                android:text="@string/btn_send"
+                android:contentDescription="@string/content_description" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

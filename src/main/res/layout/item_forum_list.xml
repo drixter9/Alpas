@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/layoutUser"
+    android:layout_marginTop="5dp"
+    android:background="@color/background_white"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:id="@+id/ll_forum_item_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_user_image_forum_item"
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/user_placeholder"
+            app:civ_border_color="@color/input_text"
+            app:civ_border_width="1dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_forum_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+                <com.example.alpas.utilsAlpas.AlpasTextViewBold
+                    android:id="@+id/tv_forum_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/item_address_name_textSize"
+                    tools:text="How to run this progra? in htmslsdasdasd"/>
+
+                <com.example.alpas.utilsAlpas.AlpasTextViewBold
+                    android:id="@+id/tv_forum_type_engineering"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/item_primary_color_border_background"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/item_address_type_padding_startEnd"
+                    android:paddingEnd="@dimen/item_address_type_padding_startEnd"
+                    android:paddingTop="@dimen/item_address_type_padding_topBottom"
+                    android:paddingBottom="@dimen/item_address_type_padding_topBottom"
+                    android:textSize="@dimen/address_details_textSize"
+                    android:textStyle="bold"
+                    tools:text="Computer"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="Thread"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:id="@+id/tv_forum_threads_topic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:text="Programming" />
+            </LinearLayout>
+            <com.example.alpas.utilsAlpas.AlpasTextView
+                android:id="@+id/tv_forum_date_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textSize="14sp"
+                tools:text="04/30/2000" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.example.alpas.utilsAlpas.AlpasTextView
+        android:id="@+id/tv_forum_threads_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        tools:text="Programmings" />
+    <ImageView
+        android:id="@+id/iv_forum_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:maxHeight="300dp"
+        android:visibility="gone"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorImageViewBackground"
+        android:contentDescription="@string/content_description" />
+
+    <LinearLayout
+        android:id="@+id/ll_forum_item_like_comment_save"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+        <ToggleButton
+            android:id="@+id/tb_like_forum_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textOff="Like"
+            android:textAllCaps="false"
+            android:drawableStart="@drawable/ic_baseline_like"
+            android:drawableTint="@drawable/like_color_change"
+            android:drawablePadding="10dp"
+            android:background="@android:color/transparent"
+            android:textColor="@drawable/like_color_change"
+            android:textSize="14sp" />
+
+        <com.example.alpas.utilsAlpas.AlpasButton
+            android:id="@+id/btn_comments_forum_list"
+            android:layout_marginStart="20dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/ic_baseline_forum"
+            android:background="@android:color/transparent"
+            android:drawableTint="@color/colorDarkGrey"
+            android:text="Comments"
+            android:textColor="@color/colorDarkGrey"
+
+            />
+
+        <com.example.alpas.utilsAlpas.AlpasButton
+            android:id="@+id/btn_save_forum_list"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_save_forum"
+            android:background="@android:color/transparent"
+            android:drawableTint="@color/colorDarkGrey"
+            android:textColor="@color/colorDarkGrey"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:drawablePadding="15dp"
+            />
+        <com.example.alpas.utilsAlpas.AlpasButton
+            android:id="@+id/btn_go_to_save_forum"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_save_forum"
+            android:background="@android:color/transparent"
+            android:drawableTint="@color/input_text"
+            android:textColor="@color/input_text"
+            android:visibility="gone"
+            android:text="Go to saved"
+            android:textAllCaps="false"
+            android:drawablePadding="15dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

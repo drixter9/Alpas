@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsultationDetailsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/ab_consultation_details"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/ct_consultation_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/iv_consultation_details_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/alpas_logo"
+                app:layout_collapseMode="parallax"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_consultation_details"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                    <TextView
+                        android:id="@+id/tv_title_consultation_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:text="@string/title_consultation_details"
+                        android:textColor="@color/background_white"
+                        android:textSize="@dimen/toolbar_title_text_size"
+                        android:textStyle="bold"
+                        />
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/ns_consultation_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_overlapTop="100dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_anchor="@id/ab_consultation_details"
+        app:layout_anchorGravity="bottom">
+
+        <LinearLayout
+            android:id="@+id/ll_consultation_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="50dp"
+                app:cardCornerRadius="50dp"
+                android:elevation="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_user_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/content_description"
+                    android:src="@drawable/user_placeholder"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.example.alpas.utilsAlpas.AlpasTextViewBold
+                android:id="@+id/tv_consultation_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/product_details_label_margin"
+                tools:text="Drixter hernandez"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="@dimen/product_details_label_text_size" />
+            <LinearLayout
+                android:id="@+id/ll_product_details_seller_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/item_gray_border_backgorund"
+                android:orientation="horizontal"
+                >
+                <com.example.alpas.utilsAlpas.AlpasTextViewBold
+                    android:id="@+id/tv_consultation_title"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/product_details_label_margin"
+                    tools:text="Drixter hernandez"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/product_details_label_text_size" />
+                <ImageView
+                    android:id="@+id/iv_message_consultation_owner"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="13dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/content_description"
+                    android:src="@drawable/ic_baseline_chat_24"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:contextClickable="true"
+                    app:tint="@color/colorDarkGrey" />
+
+            </LinearLayout>
+            <com.example.alpas.utilsAlpas.AlpasTextViewBold
+                android:id="@+id/tv_consultation_education_lbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/product_details_label_margin"
+                android:layout_marginStart="@dimen/product_details_label_margin"
+                android:layout_marginEnd="@dimen/product_details_label_margin"
+                android:text="@string/lbl_consulation_education"
+                android:textColor="@color/black"
+                android:textSize="@dimen/product_details_label_text_size" />
+
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:id="@+id/tv_consultation_education"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/product_details_title_text_size" />
+
+            <com.example.alpas.utilsAlpas.AlpasTextViewBold
+                android:id="@+id/tv_consultation_price_lbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/product_details_label_margin"
+                android:layout_marginStart="@dimen/product_details_label_margin"
+                android:layout_marginEnd="@dimen/product_details_label_margin"
+                android:text="@string/lbl_consultation_price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/product_details_label_text_size" />
+
+            <com.example.alpas.utilsAlpas.AlpasTextView
+                android:id="@+id/tv_consultation_price"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/product_details_title_text_size" />
+
+            <com.example.alpas.utilsAlpas.AlpasTextViewBold
+                android:id="@+id/tv_consultation_description_lbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/product_details_label_margin"
+                android:layout_marginStart="@dimen/product_details_label_margin"
+                android:layout_marginEnd="@dimen/product_details_label_margin"
+                android:text="@string/lbl_consultation_description"
+                android:textColor="@color/black"
+                android:textSize="@dimen/product_details_label_text_size" />
+
+            <com.example.alpas.utilsAlpas.AlpasTextView
+                android:id="@+id/tv_consultation_description"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/product_details_title_text_size" />
+
+            <com.example.alpas.utilsAlpas.AlpasButton
+                android:id="@+id/btn_save_consultation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_background_main"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingTop="@dimen/btn_padding"
+                android:paddingBottom="@dimen/btn_padding"
+                android:text="@string/btn_save_consultation"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_textSize"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+
+            <com.example.alpas.utilsAlpas.AlpasButton
+                android:id="@+id/btn_go_to_save_consultation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_background_main"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingTop="@dimen/btn_padding"
+                android:paddingBottom="@dimen/btn_padding"
+                android:text="@string/btn_lbl_go_to_save_consultation"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_textSize"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

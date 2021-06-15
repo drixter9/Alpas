@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/consultation_fragment"
+    android:focusableInTouchMode="true"
+    android:layout_marginBottom="?attr/actionBarSize"
+    tools:context=".ui.ConsultationFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/ab_consultation_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/ct_consultation_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <LinearLayout
+                android:id="@+id/ll_search_bar_consultation"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="vertical"
+                android:layout_marginTop="45dp"
+                >
+                <SearchView
+                    android:id="@+id/sv_consultation_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:iconifiedByDefault="false"
+                    android:background="@drawable/search_background"
+                    android:queryHint="Search consultation"
+                    />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_consultation_list"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <RelativeLayout
+                    android:id="@+id/rl_consultation_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="-16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_consultation_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center_vertical"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_baseline_consult"
+                        android:gravity="center"
+                        android:text="@string/title_consulation"
+                        android:textAlignment="center"
+                        android:textColor="@color/background_white"
+                        android:textSize="@dimen/title_textSize"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/ib_chat_consult"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/content_description"
+                        android:foreground="?selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_baseline_chat_24" />
+
+                    <ImageButton
+                        android:id="@+id/ib_save_consult"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_toStartOf="@+id/ib_chat_consult"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/content_description"
+                        android:foreground="?selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_baseline_save_consut" />
+
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/ns_consultation_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/ll_consultation_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_consultation_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:visibility="visible"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/tv_no_consultation_items_found"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/no_home_item_found"
+                android:textAlignment="center"
+                android:textSize="@dimen/no_data_found_textSize" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fb_my_consultation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="bottom|end"
+        android:clickable="true"
+        android:focusable="true"
+        android:backgroundTint="@color/edit_text_hint"
+        android:src="@drawable/ic_baseline_add"
+        app:elevation="6dp"
+        android:contentDescription="@string/content_description"
+        app:pressedTranslationZ="12dp" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

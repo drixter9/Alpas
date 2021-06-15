@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_forum">
+
+    <fragment
+        android:id="@+id/navigation_forum"
+        android:name="com.example.alpas.ui.ForumFragment"
+        android:label="@string/title_forum"
+        tools:layout="@layout/fragment_forum" />
+
+    <fragment
+        android:id="@+id/navigation_shopping"
+        android:name="com.example.alpas.ui.ProductListFragment"
+        android:label="@string/title_shop"
+        tools:layout="@layout/fragment_product_list" />
+
+    <fragment
+        android:id="@+id/navigation_consultation"
+        android:name="com.example.alpas.ui.ConsultationFragment"
+        android:label="@string/title_consulation"
+        tools:layout="@layout/fragment_consultation" />
+    <fragment
+        android:id="@+id/navigation_notification"
+        android:name="com.example.alpas.ui.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.alpas.ui.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

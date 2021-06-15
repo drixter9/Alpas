@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="primary_color">#5EB1BF</color>
+
+    <color name="black">#FF000000</color>
+    <color name="background_white">#FFFFFFFF</color>
+
+    <color name="action_bar_color">#225675</color>
+    <color name="status_bar_color">#5EB1BF</color>
+    <color name="edit_text_hint">#E6873C</color>
+    <color name="input_text">#5EB1BF</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color">#E6873C</color>
+    <color name="forum_dialog_background">#60A6CD </color>
+    <color name="forum_dialog_message_background">#D8F1ED </color>
+
+    <color name="product_image_background_color">#187E9E</color>
+
+    <color name="forum_categories_icon_background">#365ADA</color>
+
+    <color name="forum_categories_text_background">#6BC6E2</color>
+
+    <color name="snack_bar_error">#FFD2D2</color>
+    <color name="snack_bar_success">#DFF2BF</color>
+
+    <color name="snack_bar_error_text">#D8000C</color>
+    <color name="snack_bar_success_text">#4F8A10</color>
+
+    <color name="colorLightGray">#F1F1F1</color>
+    <color name="colorBorder">#E8E6E6</color>
+    <color name="colorDarkGrey">#878787</color>
+    
+    <color name="colorImageViewBackground">#E1E1E1</color>
+
+    <color name="colorOffWhite">#F8F8F8</color>
+
+    <color name="colorOrderPending">#FF9800</color>
+    <color name="colorOrderDelivered">#8BC34A</color>
+
+</resources>

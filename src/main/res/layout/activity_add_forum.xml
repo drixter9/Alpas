@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddForumActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_add_forum_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/action_bar_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title_add_forum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/title_add_forum"
+            android:textAlignment="center"
+            android:textColor="@color/background_white"
+            android:textSize="@dimen/title_textSize"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_add_forum_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/add_product_header_image_height">
+
+                <ImageView
+                    android:id="@+id/iv_add_forum_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorImageViewBackground"
+                    android:contentDescription="@string/content_description" />
+
+                <ImageView
+                    android:id="@+id/iv_add_image_forum_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:contentDescription="@string/content_description"
+                    android:contextClickable="true"
+                    android:padding="@dimen/add_update_product_icon_padding"
+                    android:src="@drawable/ic_baseline_add_a_photo" />
+
+            </FrameLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_add_forum_title"
+                style="@style/Widget.Design.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/et_hint_threads_title"
+                >
+
+                <com.example.alpas.utilsAlpas.AlpasEditTextRegular
+                    android:id="@+id/et_add_forum_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:padding="@dimen/et_padding"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/et_textSize"
+                    tools:text="ssd" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/item_gray_border_backgorund"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:paddingBottom="15dp"
+                android:orientation="vertical">
+
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/order_details_content_marginStartEnd"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="@dimen/order_details_content_marginStartEnd"
+                    android:paddingTop="@dimen/order_details_content_lbl_padding"
+                    android:paddingBottom="@dimen/order_details_content_lbl_padding"
+                    android:text="@string/field_details_lbl"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/order_details_lbl_textSize" />
+
+                <Spinner
+                    android:id="@+id/add_forum_field_of_study_degree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginEnd="16dp"
+                    />
+            </LinearLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_add_forum_topic"
+                style="@style/Widget.Design.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/et_add_forum_topic"
+                >
+
+                <com.example.alpas.utilsAlpas.AlpasEditTextRegular
+                    android:id="@+id/et_add_forum_topic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:padding="@dimen/et_padding"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/et_textSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_add_forum_description"
+                style="@style/Widget.Design.TextInputLayout"
+                android:layout_width="match_parent"
+                android:background="@color/colorLightGray"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/et_hint_add_forum_description">
+
+                <com.example.alpas.utilsAlpas.AlpasEditTextRegular
+                    android:id="@+id/et_add_forum_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:lines="10"
+                    android:focusable="true"
+                    android:enabled="true"
+                    android:padding="@dimen/et_padding"
+                    android:textColor="@color/black"
+                    android:maxLines="15"
+                    android:scrollbars="vertical"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:gravity="top"
+                    android:textSize="@dimen/et_textSize"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.example.alpas.utilsAlpas.AlpasButton
+                android:id="@+id/btn_add_thread_to_forum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_background_main"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingTop="@dimen/btn_padding"
+                android:paddingBottom="@dimen/btn_padding"
+                android:text="@string/btn_lbl_add"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_textSize" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

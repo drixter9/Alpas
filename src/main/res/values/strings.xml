@@ -1,0 +1,278 @@
+<resources>
+    <string name="app_name"> </string>
+
+    //Login Activity
+    <string name="Login_title">LOGIN</string>
+    <string name="et_hint_email_id">User Email</string>
+    <string name="et_hint_password">Password</string>
+    <string name="lbl_forgot_password"><u>Forgot Password?</u></string>
+    <string name="button_lbl_login">Login</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="register_text"><b>Create Account</b></string>
+
+    //Register Activity
+    <string name="register_button">REGISTER</string>
+    <string name="create_an_account">Create Your Account:</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_register_email">Email</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_birthday">Birthday</string>
+    <string name="et_hint_confirm_password">Confirm Password</string>
+    <string name="i_agree_to_the_terms_and_conditions">I Agree To The <u><b>Terms and Conditions</b></u></string>
+    <string name="already_have_an_account">Already have an Account?</string>
+    <string name="login_text"><u>Login</u></string>
+
+    // Snack bar
+    <string name="err_msg_first_name">Please enter first name.</string>
+    <string name="err_msg_last_name">Please enter last name.</string>
+    <string name="err_msg_birthday">Please enter your birthday.</string>
+    <string name="err_msg_email">Please enter email.</string>
+    <string name="err_msg_password">Please enter password.</string>
+    <string name="err_msg_confirm_password">Please enter confirm password.</string>
+    <string name="err_msg_confirm_password_mismatch">Password and confirm password mismatch.</string>
+    <string name="err_msg_agree_terms_and_conditions">Please agree on terms and condition.</string>
+    //Progress bar
+    <string name="please_wait">Please Wait&#8230;</string>
+
+    //Forgot Password Acivity
+    <string name="title_forgot_pass">FORGOT PASSWORD?</string>
+    <string name="details_forgot_pass">Enter your e-mail address we\'ll send you a email to reset your password.</string>
+    <string name="btn_lbl_submit">Submit</string>
+    <string name="email_reset_password_sent_success">Email send successfully to reset your password!</string>
+    <string name="register_success">Please verify your email to complete the registration.</string>
+    <string name="title_complete_profile">Complete Profile:</string>
+
+    //Complete Profile
+    <string name="et_hint_mobile_number">Mobile Number</string>
+    <string name="rb_lbl_male">Male</string>
+    <string name="rb_lbl_female">Female</string>
+    <string name="rb_lbl_prefer_not_to_say">Prefer not to say</string>
+    <string name="btn_lbl_save">Save</string>
+    <string name="content_description">image</string>
+    <string name="read_storage_permission_denied">Ops, you just denied the permission for storage. you can also allow it in the settings.</string>
+    <string name="image_selector_failed">Image selection Failed!</string>
+    <string name="err_msg_mobile">Please input your mobile number.</string>
+    <string name="msg_profile_update_success">Profile Update Successful.</string>
+    <string name="title_activity_dashboard">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="action_chat">Chat</string>
+    <string name="lbl_edit">Edit</string>
+    <string name="lbl_addresses">Addresses</string>
+    <string name="btn_lbl_logout">Logout</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_profile">Profile</string>
+    <string name="please_click_back_again_to_exit">Please click back again to exit.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_profile">PROFILE</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_edit_profile">EDIT PROFILE</string>
+    <string name="title_shop">Shopping</string>
+    <string name="action_add_product">Add Product</string>
+
+    <string name="title_add_product">ADD PRODUCT</string>
+    <string name="et_hint_product_title">Product Title</string>
+    <string name="et_hint_product_price">Product Price (&#8369;)</string>
+    <string name="et_hint_product_description">Product Description</string>
+    <string name="et_hint_product_quantity">Product Quantity</string>
+    <string name="err_msg_select_product_image">Please select product image.</string>
+    <string name="err_msg_enter_product_title">Please enter product title.</string>
+    <string name="err_msg_enter_product_price">Please enter product price.</string>
+    <string name="err_msg_enter_product_description">Please enter product description.</string>
+    <string name="err_msg_enter_product_quantity">Please enter product quantity.</string>
+    <string name="msg_product_upload_success">Your product is uploaded successfully.</string>
+
+    <string name="no_products_added_yet">No products added yet!</string>
+
+    <string name="no_home_item_found">No items found!</string>
+    <string name="product_delete_successful_msg">Product deleted successfully!</string>
+    <string name="consultation_delete_successful_msg">Consultation deleted successfully!</string>
+    <string name="delete_dialog_title">Delete</string>
+    <string name="delete_dialog_message">Are you sure you want to delete the product?</string>
+    <string name="delete_dialog_message_consultation">Are you sure you want to delete the consultation?</string>
+    <string name="delete_msg_yes">Yes</string>
+    <string name="delete_msg_no">No</string>
+
+    <string name="title_product_details">PRODUCT DETAILS</string>
+    <string name="lbl_product_description">Product Description</string>
+    <string name="lbl_product_details_stock_quantity">Stock Quantity</string>
+
+    <string name="btn_lbl_add_to_cart">ADD TO CART</string>
+    <string name="msg_add_to_cart_success">Product was added to your cart.</string>
+
+    <string name="btn_lbl_go_to_cart">GO TO CART</string>
+
+    <string name="title_my_cart">MY CART</string>
+    <string name="no_cart_item_found">No Item found in cart</string>
+    <string name="lbl_subtotal">Subtotal</string>
+    <string name="lbl_shipping_charge">Shipping Charge</string>
+    <string name="lbl_total_amount">Total Amount</string>
+    <string name="btn_lbl_check_out">Checkout</string>
+    <string name="action_cart">My cart</string>
+    <string name="lbl_out_of_stock">Out of stock</string>
+    <string name="msg_cart_item_remove_success">Cart item is remove.</string>
+    <string name="msg_for_available_stock">Available Stock is %1$s!. You can not add more than stock quantity.</string>
+
+    <string name="title_address_list">ADDRESS LIST</string>
+    <string name="no_address_found">No Address Found!</string>
+    <string name="lbl_add_address">Add Address</string>
+
+    <string name="title_add_address">ADD ADDRESS</string>
+    <string name="hint_full_name">Full name</string>
+    <string name="hint_phone_number">Phone number</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_zip_code">ZipCode</string>
+    <string name="hint_additional_note">Additional note</string>
+    <string name="hint_other_details">Other details</string>
+    <string name="lbl_home">HOME</string>
+    <string name="lbl_office">OFFICE</string>
+    <string name="lbl_other">OTHER</string>
+    <string name="err_msg_please_enter_full_name">Please enter full name.</string>
+    <string name="err_msg_please_enter_phone_number">Please enter phone number.</string>
+    <string name="err_msg_please_enter_address">Please enter address.</string>
+    <string name="err_msg_please_enter_zip_code">Please enter zip-code.</string>
+    <string name="msg_add_address_success">Your address was added successfully !</string>
+    <string name="err_msg_please_enter_other_details">Please enter other details.</string>
+
+    <string name="msg_your_address_is_successfully_deleted">Your address was deleted successfully.</string>
+    <string name="title_select_address">SELECT ADDRESS</string>
+    <string name="title_edit_address">EDIT ADDRESS</string>
+    <string name="btn_lbl_update">Update</string>
+    <string name="msg_your_address_updated_successfully">Your address is update sucessfully.</string>
+
+    <string name="title_checkout">CHECKOUT</string>
+    <string name="checkout_lbl_product_items">Product Items</string>
+    <string name="checkout_lbl_selected_address">Selected Address</string>
+    <string name="checkout_lbl_items_receipt">Items Receipt</string>
+    <string name="lbl_payment_mode">Payment Mode</string>
+    <string name="lbl_cash_on_delivery">Cash On Delivery</string>
+    <string name="btn_lbl_place_order">PLACE ORDER</string>
+    <string name="no_orders_placed_yet">No order place yet!</string>
+    <string name="title_order">Orders</string>
+
+    <string name="title_my_order_details">MY ORDER DETAILS</string>
+    <string name="order_details_lbl">Order Details</string>
+    <string name="order_details_lbl_order_id">Order ID</string>
+    <string name="order_details_lbl_order_date">Order Date</string>
+    <string name="order_details_lbl_order_status">Order Status</string>
+    <string name="order_status_pending">Pending</string>
+    <string name="order_details_lbl_shipping_address">Shipping Address</string>
+
+    <string name="order_status_in_process">In Process</string>
+    <string name="order_status_delivered">Delivered</string>
+
+    <string name="title_sold_products">Sold Products</string>
+    <string name="no_products_sold_out_yet">No products sold out yet!</string>
+
+    <string name="title_sold_product_details">SOLD PRODUCT DETAILS</string>
+    <string name="title_consulation">Consultation</string>
+    <string name="title_my_product">MY PRODUCTS</string>
+    <string name="title_my_order">MY ORDERS</string>
+    <string name="title_my_sold_product">MY SOLD PRODUCTS</string>
+    <string name="title_add_consultation">ADD CONSULTATION</string>
+    <string name="et_hint_consultation_title">Consultation Title</string>
+    <string name="et_hint_consultation_price">Commission Price (&#8369;)</string>
+    <string name="et_hint_consultation_description">Consultation Description</string>
+    <string name="degree">Degree</string>
+    <string name="et_hint_consultation_degree">Degree</string>
+    <string name="course_details_lbl">Education:</string>
+    <string name="btn_lbl_add">ADD</string>
+    <string name="err_msg_select_consultation_image">Please select consultation image.</string>
+    <string name="err_msg_enter_consultation_title">Please enter the consultation title.</string>
+    <string name="err_msg_enter_degree_type">Please choose the degree type.</string>
+    <string name="err_msg_enter_program_of_study">Please choose the program of study.</string>
+    <string name="err_msg_enter_consultation_price">Please enter consultation price.</string>
+    <string name="err_msg_enter_consultation_description">Please enter consultation description.</string>
+    <string name="msg_consulatation_upload_success">Consultation is added successfully.</string>
+    <string name="title_my_consultations">MY CONSULTATIONS</string>
+    <string name="no_my_consultation_found">No consultation found!</string>
+    <string name="title_consultation_details">Consultation Details</string>
+    <string name="lbl_consulation_education">Education:</string>
+    <string name="lbl_consultation_price">Price:</string>
+    <string name="lbl_consultation_description">Description:</string>
+    <string name="btn_save_consultation">SAVE CONSULTATION</string>
+    <string name="btn_lbl_go_to_save_consultation">GO TO SAVE CONSULTATION</string>
+    <string name="msg_add_to_saved_success">Saved consultation success!</string>
+    <string name="title_saved_consultation">SAVED CONSULTATION</string>
+    <string name="no_saved_consultation_item_found">No saved consultation found!</string>
+    <string name="delete_dialog_message_saved_consultation">Are you sure you want to delete the saved consultation?</string>
+    <string name="label_message">Messages</string>
+    <string name="type_message">Type Message</string>
+    <string name="btn_send">Send</string>
+    <string name="title_forum">Forum</string>
+    <string name="title_add_forum">ADD THREAD</string>
+    <string name="et_hint_threads_title">Thread Title</string>
+    <string name="field_details_lbl">Field of Study:</string>
+    <string name="et_add_forum_topic">Thread Topic</string>
+    <string name="et_hint_add_forum_description">Thread Description</string>
+    <string name="err_msg_enter_thread_title">Please enter the thread title.</string>
+    <string name="err_msg_enter_field_of_study">Please choose the field of study.</string>
+    <string name="err_msg_enter_thread_topic">Please enter thread topic.</string>
+    <string name="err_msg_enter_thread_description">Please enter thread description.</string>
+    <string name="msg_thread_upload_success">Thread is added successfully.</string>
+    <string name="title_my_threads">MY THREADS</string>
+    <string name="no_my_threads_found">No threads found!</string>
+    <string name="thread_delete_successful_msg">Thread deleted successfully!</string>
+    <string name="delete_dialog_message_thread">Are you sure you want to delete the thread?</string>
+    <string name="title_thread_details">THREAD DETAILS</string>
+    <string name="no_thread_found">No threads found!</string>
+    <string name="title_saved_threads">SAVED THREADS</string>
+    <string name="no_saved_threads_item_found">No saved threads found!</string>
+    <string name="msg_add_to_saved_success_thread">Saved thread success</string>
+    <string name="no_my_notification_found">No Notifications found!</string>
+    <string name="err_msg_email_patter">Please input appropriate email pattern.</string>
+    <string name="label_search_user">SEARCH USER</string>
+    <string name="delete_dialog_message_saved_thread">Are you sure you want to delete the saved thread?</string>
+    <string name="err_msg_password_pattern">Password should compose of a uppercase, special character and a numerical value.</string>
+    <string name="err_msg_password_length">Password should be have at least 6 characters.</string>
+    <string name="no_message_found">No message found!</string>
+    <string name="label_terms_and_conditions">Terms and conditions</string>
+    <string name="terms_and_conditions_lbl">Terms of Service</string>
+    <string name="terms_and_conditions_w">Welcome to Alpas Mobile Application!</string>
+    <string name="terms_and_conditions_p1">Alpas aims to enable people to connect with each other, build communities, and grow as engineering students.</string>
+    <string name="terms_and_conditions_p2">We don’t charge you to use Alpas or its features covered by these terms. By using our Product, you agree that we can show you ads that we think will be relevant to you and your interests. We use your personal data to help determine which ads to show you.</string>
+    <string name="terms_and_conditions_p3">We don’t sell your personal data to advertisers, and we don’t share information that directly identifies you (such as your name, email address or other contact information) with advertisers unless you give us specific permission. Instead, advertisers can tell us things like the kind of audience they want to see their ads, and we show those ads to people who may be interested. We provide advertisers with reports about the performance of their ads that help them understand how people are interacting with their content.</string>
+
+    <string name="terms_and_conditions_dp">Data Policy</string>
+    <string name="terms_and_conditions_dpq1">What data do we collect?</string>
+    <string name="terms_and_conditions_dpq1p1"><b>Information and content you provide</b>. We collect the content, communications and other information you provide when you use our Products, including when you sign up for an account, create or share content, and message or communicate with others. This can include information in or about the content you provide (like metadata), such as the location of a photo or the date a file was created. It can also include what you see through features we provide, such as our camera, so we can do things like suggest masks and filters that you might like, or give you tips on using camera formats. Our systems automatically process content and communications you and others provide to analyze context and what\'s in them for their purposes.</string>
+    <string name="terms_and_conditions_dpq1p2"><b>Networks and connections.</b> We collect information about the people, threads, forums, accounts, and consultations you are connected to and how you interact with them across our Products, such as people you communicate with the most or groups you are part of. We also collect contact information if you choose to upload, sync or import it from a device which we use for things like helping you and others find people you may know and for the other purposes listed below.</string>
+    <string name="terms_and_conditions_dpq1p3"><b>Your usage.</b> We collect information about how you use our Product, such as the types of content you view or engage with; the features you use; the actions you take; the people or accounts you interact with; and the time, frequency and duration of your activities.</string>
+    <string name="terms_and_conditions_dpq1p4"><b>Device attributes</b>: information such as the operating system, hardware and software versions, battery level, signal strength, available storage space, browser type, app and file names and types, and plugins.</string>
+    <string name="terms_and_conditions_dpq1p5"><b>Cookie data</b>: data from cookies stored on your device, including cookie IDs and settings.</string>
+
+    <string name="terms_and_conditions_dpq2">How do we use your data?</string>
+    <string name="terms_and_conditions_dpq2p1"><b>Provide, personalize and improve our Products</b>. We use the information we have to deliver our Products, including to personalize features and make suggestions for you on and off our Product.</string>
+
+    <string name="terms_and_conditions_dpq3">How can I manage or delete information about me?</string>
+    <string name="terms_and_conditions_dpq3p1">We store data until it is no longer necessary to provide our services or until your account is deleted; whichever comes first. This is a case-by-case determination that depends on things like the nature of the data, why it is collected and processed, and relevant legal or operational retention needs.</string>
+
+    <string name="terms_and_conditions_dpq4">How to contact Alpas with Questions? </string>
+    <string name="terms_and_conditions_dpq4p1">You may contact us at <b>kunizakaichitai.no.dariru@gmail.com</b></string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="forum">Forum:</string>
+    <string name="threads">Threads</string>
+    <string name="saved_threads">Saved Threads</string>
+    <string name="shopping">Shopping:</string>
+    <string name="products">Products</string>
+    <string name="orders">Orders</string>
+    <string name="sold">Sold</string>
+    <string name="consultation">Consultation:</string>
+    <string name="consultation_post">Consultation Post</string>
+    <string name="saved_consultation">Saved Consultation</string>
+    <string name="additional_info">Additional Info:</string>
+    <string name="name">Name:</string>
+    <string name="gender">Gender:</string>
+    <string name="email">Email:</string>
+    <string name="mobile">Mobile:</string>
+    <string name="threads_td">Threads:</string>
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
+    <string name="save">Save</string>
+    <string name="go_to_saved">Go to saved</string>
+
+
+</resources>

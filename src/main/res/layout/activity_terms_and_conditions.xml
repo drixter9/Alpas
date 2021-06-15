@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".TermsAndConditionsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_terms_and_conditions_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/action_bar_color"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/tv_user_search_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/label_terms_and_conditions"
+            android:textAlignment="center"
+            android:textColor="@color/background_white"
+            android:textSize="@dimen/title_textSize"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.alpas.utilsAlpas.AlpasTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/order_details_content_marginStartEnd"
+                android:layout_marginTop="@dimen/order_details_content_marginTopBottom"
+                android:layout_marginEnd="@dimen/order_details_content_marginStartEnd"
+                android:paddingTop="@dimen/order_details_content_lbl_padding"
+                android:paddingBottom="@dimen/order_details_content_lbl_padding"
+                android:text="@string/terms_and_conditions_lbl"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_white"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/order_details_content_paddingStartEnd"
+                android:paddingTop="@dimen/order_details_content_paddingTopBottom"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/order_details_content_paddingTopBottom">
+
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_conditions_w"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"/>
+
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_conditions_p1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:justificationMode="inter_word"
+                    android:layout_marginBottom="10dp"/>
+
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_conditions_p2"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:justificationMode="inter_word"
+                    android:layout_marginBottom="10dp"/>
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_conditions_p3"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:justificationMode="inter_word"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+            <com.example.alpas.utilsAlpas.AlpasTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/order_details_content_marginStartEnd"
+                android:layout_marginTop="@dimen/order_details_content_marginTopBottom"
+                android:layout_marginEnd="@dimen/order_details_content_marginStartEnd"
+                android:paddingTop="@dimen/order_details_content_lbl_padding"
+                android:paddingBottom="@dimen/order_details_content_lbl_padding"
+                android:text="@string/terms_and_conditions_dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_white"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/order_details_content_paddingStartEnd"
+                android:paddingTop="@dimen/order_details_content_paddingTopBottom"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/order_details_content_paddingTopBottom">
+
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_conditions_dpq1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"/>
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_conditions_dpq1p1"
+                    android:textColor="@color/black"
+                    android:justificationMode="inter_word"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_conditions_dpq1p2"
+                    android:textColor="@color/black"
+                    android:justificationMode="inter_word"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_conditions_dpq1p3"
+                    android:textColor="@color/black"
+                    android:justificationMode="inter_word"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"/>
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_conditions_dpq1p4"
+                    android:textColor="@color/black"
+                    android:justificationMode="inter_word"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="15dp"/>
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_conditions_dpq1p5"
+                    android:textColor="@color/black"
+                    android:justificationMode="inter_word"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="15dp"/>
+
+
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_conditions_dpq2"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"/>
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_conditions_dpq2p1"
+                    android:textColor="@color/black"
+                    android:justificationMode="inter_word"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_conditions_dpq3"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"/>
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_conditions_dpq3p1"
+                    android:textColor="@color/black"
+                    android:justificationMode="inter_word"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_conditions_dpq4"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"/>
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_conditions_dpq4p1"
+                    android:textColor="@color/black"
+                    android:justificationMode="inter_word"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

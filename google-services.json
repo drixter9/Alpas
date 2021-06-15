@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "804816184860",
+    "firebase_url": "https://alpas-254ad-default-rtdb.firebaseio.com",
+    "project_id": "alpas-254ad",
+    "storage_bucket": "alpas-254ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804816184860:android:55a0200fdc949288f261d9",
+        "android_client_info": {
+          "package_name": "com.example.alpas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804816184860-2m66rro9t0o0fu3uibjod8vo4e296hep.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alpas",
+            "certificate_hash": "d92790949b43e94a2b5636b4bbe96b6b7452ca92"
+          }
+        },
+        {
+          "client_id": "804816184860-7pcnrimj3es5tb82m1nj5m37e9p4ks5f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP21HYbXvMQYOM_kgIJ5LBnzbxNe_bCUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "804816184860-7pcnrimj3es5tb82m1nj5m37e9p4ks5f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

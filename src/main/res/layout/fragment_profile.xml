@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="?attr/actionBarSize"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".ui.ProfileFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/fl_header_bg_settings"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/iv_header_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/content_description"
+                    android:scaleType="fitXY"
+                    android:src="@color/input_text" />
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_profile_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <RelativeLayout
+                    android:id="@+id/ll_profile_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="-16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_add_profile_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center_vertical"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:text="@string/title_profile"
+                        android:textAlignment="center"
+                        android:textColor="@color/background_white"
+                        android:textSize="@dimen/title_textSize"
+                        android:textStyle="bold"
+                        android:drawableStart="@drawable/ic_baseline_user"
+                        app:drawableTint="@color/background_white" />
+
+                    <ImageButton
+                        android:id="@+id/ib_setting"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/content_description"
+                        android:foreground="?selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_baseline_settings_24"
+                        android:tint="@color/background_white" />
+
+
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <FrameLayout
+                android:id="@+id/fl_user_image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/fl_header_bg_settings"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-36dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_user_photo_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/setting_user_picture_margin"
+                    android:contentDescription="@string/content_description"
+                    android:src="@drawable/user_placeholder" />
+
+            </FrameLayout>
+
+            <com.example.alpas.utilsAlpas.AlpasTextViewBold
+                android:id="@+id/tv_name_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="70dp"
+                android:layout_toEndOf="@id/fl_user_image"
+                android:text="@string/hint_first_name"
+                android:maxWidth="300dp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/background_white"
+                android:textSize="20sp" />
+
+            <com.example.alpas.utilsAlpas.AlpasTextView
+                android:id="@+id/tv_email_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name_profile"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:lines="1"
+                android:maxWidth="300dp"
+                android:ellipsize="end"
+                android:layout_toEndOf="@id/fl_user_image"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="14sp"
+                android:text="@string/hint_first_name"/>
+
+        </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/ll_Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/settings_address_margin"
+                android:background="@drawable/item_gray_border_backgorund"
+                android:foreground="?attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="@dimen/settings_address_padding">
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/settings_lbl_addresses_margin"
+                    android:textSize="@dimen/settings_lbl_addresses_textSize"
+                    android:layout_weight="1"
+                    android:text="@string/lbl_addresses"
+                    android:textColor="@color/colorDarkGrey"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/content_description"
+                    android:src="@drawable/ic_baseline_chevron_right_24"
+                    app:tint="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/item_gray_border_backgorund"
+                android:orientation="vertical">
+
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/order_details_content_marginStartEnd"
+                    android:layout_marginTop="@dimen/order_details_content_marginTopBottom"
+                    android:layout_marginEnd="@dimen/order_details_content_marginStartEnd"
+                    android:paddingTop="@dimen/order_details_content_lbl_padding"
+                    android:paddingBottom="@dimen/order_details_content_lbl_padding"
+                    android:text="@string/forum"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/order_details_lbl_textSize" />
+
+                <com.example.alpas.utilsAlpas.AlpasButton
+                    android:id="@+id/btn_profile_threads"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/profile_items"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingTop="@dimen/btn_padding"
+                    android:paddingBottom="@dimen/btn_padding"
+                    android:text="@string/threads"
+                    android:textAlignment="viewStart"
+                    android:drawableStart="@drawable/ic_baseline_forum"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/black"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/btn_textSize" />
+                <com.example.alpas.utilsAlpas.AlpasButton
+                    android:id="@+id/btn_profile_saved_Threads"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/profile_items"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingTop="@dimen/btn_padding"
+                    android:paddingBottom="@dimen/btn_padding"
+                    android:text="@string/saved_threads"
+                    android:textAlignment="viewStart"
+                    android:drawableStart="@drawable/ic_baseline_saved_threads"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/black"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/btn_textSize" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_gray_border_backgorund"
+            android:orientation="vertical">
+
+            <com.example.alpas.utilsAlpas.AlpasTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/order_details_content_marginStartEnd"
+                android:layout_marginTop="@dimen/order_details_content_marginTopBottom"
+                android:layout_marginEnd="@dimen/order_details_content_marginStartEnd"
+                android:paddingTop="@dimen/order_details_content_lbl_padding"
+                android:paddingBottom="@dimen/order_details_content_lbl_padding"
+                android:text="@string/shopping"
+                android:textColor="@color/black"
+                android:textSize="@dimen/order_details_lbl_textSize" />
+
+            <com.example.alpas.utilsAlpas.AlpasButton
+                android:id="@+id/btn_profile_products"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/profile_items"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingTop="@dimen/btn_padding"
+                android:paddingBottom="@dimen/btn_padding"
+                android:text="@string/products"
+                android:textAlignment="viewStart"
+                android:drawableStart="@drawable/ic_baseline_shopping"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/black"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_textSize" />
+            <com.example.alpas.utilsAlpas.AlpasButton
+                android:id="@+id/btn_profile_Orders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/profile_items"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingTop="@dimen/btn_padding"
+                android:paddingBottom="@dimen/btn_padding"
+                android:text="@string/orders"
+                android:textAlignment="viewStart"
+                android:drawableStart="@drawable/ic_baseline_order"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/black"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_textSize" />
+            <com.example.alpas.utilsAlpas.AlpasButton
+                android:id="@+id/btn_profile_Sold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/profile_items"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingTop="@dimen/btn_padding"
+                android:paddingBottom="@dimen/btn_padding"
+                android:text="@string/sold"
+                android:textAlignment="viewStart"
+                android:drawableStart="@drawable/ic_baseline_sold"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/black"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_textSize" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_gray_border_backgorund"
+                android:orientation="vertical">
+
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/order_details_content_marginStartEnd"
+                    android:layout_marginTop="@dimen/order_details_content_marginTopBottom"
+                    android:layout_marginEnd="@dimen/order_details_content_marginStartEnd"
+                    android:paddingTop="@dimen/order_details_content_lbl_padding"
+                    android:paddingBottom="@dimen/order_details_content_lbl_padding"
+                    android:text="@string/consultation"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/order_details_lbl_textSize" />
+
+                <com.example.alpas.utilsAlpas.AlpasButton
+                    android:id="@+id/btn_profile_my_consultation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/profile_items"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingTop="@dimen/btn_padding"
+                    android:paddingBottom="@dimen/btn_padding"
+                    android:text="@string/consultation_post"
+                    android:textAlignment="viewStart"
+                    android:drawableStart="@drawable/ic_baseline_consult"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/black"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/btn_textSize" />
+                <com.example.alpas.utilsAlpas.AlpasButton
+                    android:id="@+id/btn_profile_saved_consultation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/profile_items"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingTop="@dimen/btn_padding"
+                    android:paddingBottom="@dimen/btn_padding"
+                    android:text="@string/saved_consultation"
+                    android:textAlignment="viewStart"
+                    android:drawableStart="@drawable/ic_baseline_save_consut"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/black"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/btn_textSize" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_gray_border_backgorund"
+                android:orientation="vertical">
+
+                <com.example.alpas.utilsAlpas.AlpasTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/order_details_content_marginStartEnd"
+                    android:layout_marginTop="@dimen/order_details_content_marginTopBottom"
+                    android:layout_marginEnd="@dimen/order_details_content_marginStartEnd"
+                    android:paddingTop="@dimen/order_details_content_lbl_padding"
+                    android:paddingBottom="@dimen/order_details_content_lbl_padding"
+                    android:text="@string/additional_info"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/order_details_lbl_textSize" />
+
+                <com.example.alpas.utilsAlpas.AlpasButton
+                    android:id="@+id/btn_profile_terms_and_conditions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/profile_items"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingTop="@dimen/btn_padding"
+                    android:paddingBottom="@dimen/btn_padding"
+                    android:text="@string/terms_and_conditions"
+                    android:textAlignment="viewStart"
+                    android:drawableStart="@drawable/ic_baseline_terms_and_conditions"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/black"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/btn_textSize" />
+
+            </LinearLayout>
+
+            <com.example.alpas.utilsAlpas.AlpasButton
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/settings_button_marginStartEnd"
+                android:layout_marginEnd="@dimen/settings_button_marginStartEnd"
+                android:layout_marginBottom="@dimen/settings_button_marginTopBottom"
+                android:layout_marginTop="@dimen/settings_button_marginTopBottom"
+                android:background="@drawable/button_background_main"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_gravity ="center"
+                android:paddingTop="@dimen/btn_padding"
+                android:paddingBottom="@dimen/btn_padding"
+                android:text="@string/btn_lbl_logout"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_textSize"/>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

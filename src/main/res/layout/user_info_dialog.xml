@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="@dimen/progress_dialog_content_padding">
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:paddingTop="50dp"
+        android:background="@drawable/item_user_info_background"
+        >
+
+        <com.example.alpas.utilsAlpas.AlpasTextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/product_details_label_margin"
+            tools:text="Drixter hernandez"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="@dimen/product_details_label_text_size" />
+
+
+        <com.example.alpas.utilsAlpas.AlpasTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/product_details_label_margin"
+            android:layout_marginEnd="@dimen/product_details_label_margin"
+            android:text="Email:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/product_details_label_text_size" />
+
+        <com.example.alpas.utilsAlpas.AlpasTextView
+            android:id="@+id/tv_user_info_email"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/product_details_title_text_size" />
+
+        <com.example.alpas.utilsAlpas.AlpasTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/product_details_label_margin"
+            android:layout_marginStart="@dimen/product_details_label_margin"
+            android:layout_marginEnd="@dimen/product_details_label_margin"
+            android:text="Gender:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/product_details_label_text_size" />
+
+        <com.example.alpas.utilsAlpas.AlpasTextView
+            android:id="@+id/tv_user_info_gender"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/product_details_title_text_size" />
+    <com.example.alpas.utilsAlpas.AlpasButton
+        android:id="@+id/btn_user_message"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_background_main"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingTop="@dimen/btn_padding"
+        android:paddingBottom="@dimen/btn_padding"
+        android:text="Message"
+        android:textColor="@color/black"
+        android:textSize="@dimen/btn_textSize"
+        tools:visibility="visible"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_user_image"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/user_placeholder"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        >
+        <ImageView
+            android:id="@+id/iv_user_info_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="end"
+            android:padding="5dp"
+            android:layout_marginTop="55dp"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/ic_baseline_clear"
+            android:foreground="?attr/selectableItemBackground"
+            android:contextClickable="true"
+            app:tint="@color/colorDarkGrey" />
+    </RelativeLayout>
+
+
+</FrameLayout>
+
+
+

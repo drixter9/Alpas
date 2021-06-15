@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/user_placeholder" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_gray_border_backgorund"
+            android:orientation="vertical">
+
+            <com.example.alpas.utilsAlpas.AlpasTextViewSemiBold
+                android:id="@+id/tv_comment_user_name"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:text="Drixter hernandez" />
+
+            <com.example.alpas.utilsAlpas.AlpasTextView
+                android:id="@+id/tv_comment_message"
+                android:layout_width="350dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:text="hello eto dapat mong gawinasdasdas sds s dsd s ds ds ds" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/tb_like_comment_list"
+            android:layout_width="62dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="45dp"
+            android:background="@android:color/transparent"
+            android:checked="false"
+            android:drawableStart="@drawable/ic_baseline_like"
+            android:drawableTint="@drawable/like_color_change"
+            android:textAlignment="center"
+            android:textColor="@drawable/like_color_change"
+            android:textOff=""
+            android:textSize="12sp"
+            android:textOn=""
+            />
+
+        <TextView
+            android:id="@+id/tv_comment_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="12sp"
+            tools:text="30/40/20003"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
